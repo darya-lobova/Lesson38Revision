@@ -1,8 +1,8 @@
 #include "logic.h"
 
 string calculate_likes(int like, int day) {
-	if (day < 0) {
-		return " ";
+	if (day <= 0 || like < 0) {
+		return "Wrong data.";
 	}
 
 	string result;
