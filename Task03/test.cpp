@@ -38,7 +38,7 @@ void test06() {
 }
 void test07() {
 	int number = 32;
-	bool expected = false;
+	bool expected = true;
 	print("test01", number, expected);
 }
 void test08() {
@@ -54,5 +54,5 @@ void test09() {
 void test10() {
 	int number = 80;
 	bool expected = false;
-	print("test01", number, expected);
+	print("test10", number, expected);
 }
