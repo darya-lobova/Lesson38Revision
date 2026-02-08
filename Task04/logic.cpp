@@ -1,18 +1,12 @@
 #include "logic.h"
 
 string order_numbers(int n, int m) {
+	int step = (n >= m) ? -1 : 1;
 
 	string result = "";
 
-	if (n > m) {
-		for (int i = n; m <= n; i--) {
-			result += to_string(i) + " ";
-		}
-	}
-	else if (m > n) {
-		for (int i = n; m >= n; i++) {
-			result += to_string(i) + " ";
-		}
+	for (int i = n; i != m + step; i += step) {
+		result += to_string(i) + " ";
 	}
 
 		return result;
